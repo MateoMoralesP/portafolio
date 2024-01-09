@@ -1,0 +1,178 @@
+body {
+    font-family: 'Arial', sans-serif;
+
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ajusta el valor según sea necesario */
+    pointer-events: none; /* Esto permite que los eventos pasen a los elementos debajo */
+}
+#about {
+    padding: 60px 0;
+}
+
+#skills {
+    padding: 60px 0;
+}
+
+#projects {
+    padding: 60px 0;
+}
+
+#contact {
+    padding: 60px 0;
+}
+
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+}
+
+/* Cambio de color de la barra de navegación al hacer scroll */
+.navbar-scrolled {
+    background-color: #343a40 !important;
+}
+
+/* Cambio de color de texto de la barra de navegación al hacer scroll */
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* Estilo de botones */
+.btn-primary,
+.btn-secondary {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Cambio de color de botones al hacer hover */
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #343a40 !important;
+    color: #fff !important;
+}
+
+/* Estilo de imagen */
+.img-fluid {
+    max-width: 30%;
+    height: auto;
+}
+
+/* Estilo de enlace a CV y otros proyectos */
+.btn-primary,
+.btn-secondary {
+    margin: 10px;
+}
+
+
+
+.about-section h2 {
+    color: #ffffff;
+    /* Cambia el color del título según tus preferencias */
+}
+
+.about-section p {
+    font-size: 18px;
+    /* Ajusta el tamaño del texto según tus preferencias */
+}
+
+/* En el archivo CSS, agrega estilos para la sección "Habilidades" */
+.skills-section img {
+    margin: 10px;
+    /*Añademargenentrelasimágenes*/
+    transition: transform 0.3s ease-in-out;
+    /* Agrega una transición suave al hacer hover */
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+.skills-section img:hover {
+    transform: scale(1.9);
+    /*Hacequelasimágenesseagrandenligeramentealhacerhover*/
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+    -webkit-transform: scale(1.9);
+}
+
+.carousel-image {
+    object-fit: cover;
+
+    height: 100vh;
+
+}
+
+
+.about-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #007bff, #b6b6b6);
+    /* Colores de fondo para el gradiente */
+    opacity: 0.6;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.about-section h2,
+.about-section p {
+    animation: fadeInUp 1s ease-out;
+}
+
+.about-section img {
+    animation: fadeInRight 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+        -moz-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+        -o-transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
