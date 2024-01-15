@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Array de proyectos con sus títulos e imágenes
     var proyectos = [
-      { titulo: "empleo", imagen: "img/empleo.png" },
-      { titulo: "sistema de venta", imagen: "img/invca.jpg" },
-      { titulo: "ventanilla unica", imagen: "img/ventanilla.png" },
-      { titulo: "empleo", imagen: "img/empleo.png" },
-      { titulo: "sistema de venta", imagen: "img/invca.jpg" },
-      { titulo: "ventanilla unica", imagen: "img/ventanilla.png" }
+      { titulo: "Agenda", imagen: "img/agenda.png" },
+      { titulo: "Calculadora (react)", imagen: "img/calculadora.png" },
+      { titulo: "quiz Pacman", imagen: "img/pacman.png" },
+      { titulo: "lista de Tareas", imagen: "img/tareas.png" },
+      { titulo: "tres en raya", imagen: "img/tresenraya.png" },
+      { titulo: "subneteo", imagen: "img/subneteo.png" }
+
     ];
   
     // Obtén el contenedor de la galería
